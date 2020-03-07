@@ -4,7 +4,7 @@ import time
 import pexpect
 
 
-class Node:
+class Node(object):
     def __init__(self, name, package, required_source):
         self.name = name + ".py"
         self.package = package

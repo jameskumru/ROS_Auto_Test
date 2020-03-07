@@ -1,5 +1,3 @@
-import time
-
 import pexpect
 
 
@@ -25,6 +23,7 @@ class Roscore(object):
     def terminate(self):
         if self.running is True:
             self.current_process.close()
+            self.running = False
             return True
         else:
             return False
