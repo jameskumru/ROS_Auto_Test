@@ -10,10 +10,10 @@ class TerminalControls:
 
     @staticmethod
     def get_sourced_shell(source):
-        shell = pexpect.spawnu('/bin/bash')
-        shell.expect('$')
-        shell.sendline('source ' + source)
-        shell.expect('$')
+        shell = pexpect.spawnu(u'/bin/bash')
+        shell.expect(u'$')
+        shell.sendline(u'source ' + source)
+        shell.expect(u'$')
         return shell
 
     @staticmethod

@@ -9,8 +9,6 @@ from model.Topic import Topic
 from behave import *
 from hamcrest import assert_that, greater_than_or_equal_to, less_than_or_equal_to, contains_string
 
-print(sys.path)
-
 
 def assert_dimension(expected_dimension, actual_dimension, tolerance):
     assert_that(actual_dimension, less_than_or_equal_to(float(expected_dimension) + float(tolerance)))
